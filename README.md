@@ -70,17 +70,17 @@ Download the appropriate version based on your system architecture.
 ## ✦ For x86_64 Architecture:
 
 ```bash
-wget --quiet --show-progress https://github.com/hemilabs/heminetwork/releases/download/v0.4.3/heminetwork_v0.4.3_linux_amd64.tar.gz -O heminetwork_v0.4.3_linux_amd64.tar.gz
-tar -xzf heminetwork_v0.4.3_linux_amd64.tar.gz
-cd heminetwork_v0.4.3_linux_amd64
+wget --quiet --show-progress https://github.com/hemilabs/heminetwork/releases/download/v0.10.0/heminetwork_v0.10.0_linux_amd64.tar.gz -O heminetwork_v0.10.0_linux_amd64.tar.gz
+tar -xzf heminetwork_v0.10.0_linux_amd64.tar.gz
+cd heminetwork_v0.10.0_linux_amd64
 ```
 
 ## ✦ For arm64 Architecture:
 
 ```bash
-wget --quiet --show-progress https://github.com/hemilabs/heminetwork/releases/download/v0.4.3/heminetwork_v0.4.3_linux_arm64.tar.gz -O heminetwork_v0.4.3_linux_arm64.tar.gz
-tar -xzf heminetwork_v0.4.3_linux_arm64.tar.gz
-cd heminetwork_v0.4.3_linux_arm64
+wget --quiet --show-progress https://github.com/hemilabs/heminetwork/releases/download/v0.10.0/heminetwork_v0.10.0_linux_arm64.tar.gz -O heminetwork_v0.10.0_linux_arm64.tar.gz
+tar -xzf heminetwork_v0.10.0_linux_arm64.tar.gz
+cd heminetwork_v0.10.0_linux_arm64
 ```
 
 ## ✦ Wallet create
@@ -113,8 +113,8 @@ Description=Hemi testnet pop tx Service
 After=network.target
 
 [Service]
-WorkingDirectory=/root/heminetwork_v0.4.3_linux_amd64
-ExecStart=/root/heminetwork_v0.4.3_linux_amd64/popmd
+WorkingDirectory=/root/heminetwork_v0.10.0_linux_amd64
+ExecStart=/root/heminetwork_v0.10.0_linux_amd64/popmd
 Environment="POPM_BTC_PRIVKEY= replace here with your privatkey "
 Environment="POPM_STATIC_FEE=200"
 Environment="POPM_BFG_URL=wss://testnet.rpc.hemi.network/v1/ws/public"
